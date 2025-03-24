@@ -59,3 +59,5 @@ Expected output:
 |   Peek   |  46 ms  |  41 ms  |  46 ms  |  43 ms  |  42 ms  |  43.6 ms  |
 | Contains | 5872 ms | 5849 ms | 5777 ms | 5826 ms | 5809 ms | 5826.6 ms |
 |  Dequeue |  30 ms  |  30 ms  |  30 ms  |  29 ms  |  31 ms  |   30 ms   |
+
+* Compared to circular buffering with a fixed array this meathod takes longer to manipulate the queue but it is easier to program and allows for changing size of the queue itself. With a fixed array the queue size is permenently set at the start of the program while LinkedLists are able to change in size to accomidate additional data at the expense of increased execution time.
