@@ -6,7 +6,7 @@ public class TestCases
 {
     public static void Run()
     {
-        Console.WriteLine("==================Test Caes==================\n");
+        Console.WriteLine("================== Test Cases ==================\n");
 
         Console.WriteLine("==== Test Case 1 ====");
         // Add items to queue and check if full   
