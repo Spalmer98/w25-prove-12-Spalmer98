@@ -61,3 +61,6 @@ Expected output:
 |  Dequeue |  0 ms  |  0 ms  |   0 ms  |    0 ms  |     3 ms  |     29 ms  |       5.33 ms |
 
 * Compared to circular buffering with a fixed array this meathod takes longer to manipulate the queue but it is easier to program and allows for changing size of the queue itself. With a fixed array the queue size is permenently set at the start of the program while LinkedLists are able to change in size to accomidate additional data at the expense of increased execution time.
+
+* Based on the performance tests I can clearly see that Enqueue, Peek, and Dequeu are all O(1) complexity because they maintain a consistance execution speed until the items reach 1,000,000 where they begin to jump to double digit speeds.
+* The Contains function on the other hand appears to be an O(n) complexity because it's execution time clearly increases as the number of items/inputs increases. Once we reach 1,000,000 items we see a massive spike in time it takes to execute and causes the program to take a considerable amount of time to progress.
