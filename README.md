@@ -53,11 +53,11 @@ Expected output:
 
 #### Performance Measurements
 
-|   Test   |    1    |    2    |    3    |    4    |    5    |  Average  |
-|:--------:|:-------:|:-------:|:-------:|:-------:|:-------:|:---------:|
-|  Enqueue |  44 ms  |  40 ms  |  40 ms  |  42 ms  |  41 ms  |  41.4 ms  |
-|   Peek   |  46 ms  |  41 ms  |  46 ms  |  43 ms  |  42 ms  |  43.6 ms  |
-| Contains | 5872 ms | 5849 ms | 5777 ms | 5826 ms | 5809 ms | 5826.6 ms |
-|  Dequeue |  30 ms  |  30 ms  |  30 ms  |  29 ms  |  31 ms  |   30 ms   |
+|   Test   |   10   |  100   |  1000   |   10000  |  100000   |   1000000  |    Average    |
+|:--------:|:------:|:------:|:-------:|:--------:|:---------:|:----------:|:-------------:|
+|  Enqueue |  0 ms  |  0 ms  |   0 ms  |    0 ms  |     1 ms  |     33 ms  |      5.666 ms |
+|   Peek   |  0 ms  |  0 ms  |   0 ms  |    0 ms  |     6 ms  |     31 ms  |        7.4 ms |
+| Contains |  0 ms  |  0 ms  |   4 ms  |  147 ms  |  6203 ms  | 625405 ms  | 105293.166 ms |
+|  Dequeue |  0 ms  |  0 ms  |   0 ms  |    0 ms  |     3 ms  |     29 ms  |       5.33 ms |
 
 * Compared to circular buffering with a fixed array this meathod takes longer to manipulate the queue but it is easier to program and allows for changing size of the queue itself. With a fixed array the queue size is permenently set at the start of the program while LinkedLists are able to change in size to accomidate additional data at the expense of increased execution time.
