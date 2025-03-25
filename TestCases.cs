@@ -9,7 +9,7 @@ public class TestCases
         Console.WriteLine("================== Test Cases ==================\n");
 
         Console.WriteLine("==== Test Case 1 ====");
-        // Add items to queue and check if full   
+        // Add items to queue  
         var item = new LLQueue<int>();
         item.Enqueue(1);
         item.Enqueue(2);
